@@ -300,7 +300,7 @@ module ActiveMerchant #:nodoc:
         xml.onFile do
           xml.customerId token.payment_data[:customer_id]
           xml.token token.payment_data[:token]
-          xml.cvvNumber
+          xml.cvvNumber token.payment_data[:cvv_number]
         end
       end
 
